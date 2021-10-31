@@ -13,8 +13,12 @@
 
 O negativo de uma imagem é calculado subtraindo ao 255 o valor de vermelho ou verde ou azul.
 O código abaixo se encontra escrito em _phyton_.
+
+```bash	
 pip install markdown
-~~~	
+```
+
+```python
 from PIL import Image
 
 image = Image.open("images/newYork.jpg")
@@ -39,7 +43,7 @@ for i in range(0, image.size[0] - 1):
 		negative_image.putpixel((i,j),(redPixel, greenPixel, bluesPixel))
 
 negative_image.save("negative.jpg")
-~~~
+```
 
 ## Cor e codificação de cor:
 ### Conceitos Gerais:
