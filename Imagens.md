@@ -1,4 +1,4 @@
-### Imagens Bitmap:
+## Imagens Bitmap:
 - Representam-se como matriz de pixéis;
 - Não descrevem a imagem recorrendo a modelos matemáticos;
 - As operações de edição normalmente pertimem criar e/ou modificar o aspeto dos pixéis que a constituem;<p>
@@ -7,6 +7,38 @@
 - O pixel é pois o elemento mais pequeno de resolução de uma imagem;
 - O pixel aspect ratio é um valor numérico que representa a razão entre a largura do pixel e a sua altura;
 - Os ___bitmaps___ igonaram a semântica (ou o significado) da informação que representa.
+
+## Operações com imagens bitmap:
+### Calculo do negativo da imagem:
+
+O negativo de uma imagem é calculado subtraindo ao 255 o valor de vermelho ou verde ou azul.
+O código abaixo se encontra escrito em _phyton_.
+```phython
+from PIL import Image
+
+image = Image.open("images/newYork.jpg")
+
+#create a new image
+negative_image = Image.new(image.mode, image.size, 'white')
+negative_save.save("negative.jpg")
+
+#negative algorithm
+for i in range(0, image.size[0] - 1):
+	for j in range(0, image.size[1]-1):
+
+		# Get pixel value at (x,y) position of the image
+		pixelColorVals = image.getpixel((i,j))
+
+		# Invert color
+		redPixel = 255 - pixelColorVals[0] # Negate red pixel
+		greenPixel = 255 - pixelColorVals[1] # Negate green pixel
+		bluePixel = 255 - pixelColorVals[1] # Negate blue pixel
+
+		# Modify the image with inverted pixel values
+		negative_image.putpixel((i,j),(redPixel, greenPixel, bluesPixel))
+
+negative_image.save("negative.jpg")
+```
 
 ## Cor e codificação de cor:
 ### Conceitos Gerais:
