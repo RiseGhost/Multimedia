@@ -13,7 +13,7 @@
 
 O negativo de uma imagem é calculado subtraindo ao 255 o valor de vermelho ou verde ou azul.
 O código abaixo se encontra escrito em _phyton_.
-~~~phython
+~~~ phython
 from PIL import Image
 
 image = Image.open("images/newYork.jpg")
