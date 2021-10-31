@@ -63,8 +63,8 @@ new_img.save("black_white.jpg")
 ### Calculo da inversão da imagem:
 
 O codigo a baixo esta escrito em _python_.
-	
-```pyhton
+```python
+# Load image:
 input_image = Image.open("images/newYork.jpg")
 input_pixels = input_image.load()
 
