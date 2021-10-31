@@ -40,6 +40,47 @@ for i in range(0, image.size[0] - 1):
 negative_image.save("negative.jpg")
 ```
 
+### Calculo do Preto e Branco de uma imagem:
+
+O codigo a baixo está escrito em _python_.
+```python
+from PIL import Image
+from PIL import ImageEnhance
+
+image = Image.open("images/newYork.jpg")
+img_data = image.getdata()
+
+lst = []
+for i in img_data:
+	lst.append(i[0]*0.2125 + i[1]*0.7174 + i[2]*0.0721)
+
+new_img = Image.new("L", image.size)
+new_img.putdata(lst)
+
+new_img.save("black_white.jpg")
+```
+
+### Calculo da inversão da imagem:
+
+O codigo a baixo esta escrito em _python_.
+```pyhton
+# Load image:
+input_image = Image.open("images/newYork.jpg")
+input_pixels = input_image.load()
+
+# Create output image
+output_image = Image.new("RGB", input_image.size)
+draw = ImageDraw.Draw(output_image)
+
+# Copy pixels
+for x in range(output_image.width):
+	for y in range(output_image.height):
+		xp = input_image.width - x - 1
+		draw.point((x, y), input_pixels[xp, y])
+
+output_image.save("flip.jpg")
+```
+
 ## Cor e codificação de cor:
 ### Conceitos Gerais:
 - Luz: onde eletromagnética;
