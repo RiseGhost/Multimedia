@@ -115,6 +115,37 @@ output_image.save("flip.jpg")
 
 ![](http://4.bp.blogspot.com/-XSebXPhPo-Q/TV0BeHJUW7I/AAAAAAAAAAU/M5J9Sc7KH-0/s1600/sdabvksdlkf.jpg)
 
+### Obter os canais de cor de uma imagem:
+O código a baixo abaixo sepera os canais de cor de uma imagem. Está escrito em _python_.
+```python
+from PIL import Image
+import numpy as np
+
+img = Image.open('image.png').convert('RGB')
+
+def channel(img, n):
+	""" n = 0: red, 1: green, 2: blue """
+	a = np.array(img)
+	a[:,:,(n != 0, n != 1, n != 2)] *= 0
+	return Image.fromarray(a)
+
+# RED IMAGE
+red = channel(img, 0)
+red.save("red.png")
+
+# GREEN IMAGE
+green = channel(img, 1)
+green.save("green.png")
+
+# BLUE IMAGE
+blue = channel(img, 2)
+blue.save("blue.png")
+```
+
+<p>O resultado final é o seguinte sem o preto e branco:
+	
+![](https://waltermattos.com/site/wp-content/uploads/2017/08/Poder_Curvas_Photoshop_Canais_RGB_Mistura.jpg)
+
 ### Modelo CMYK:
 - Próprio para os **objetos que refletem luz**;
 - Para obter as matrizes desejadas procede-se à **subtração das cores refeltida por uma superfício branca**;
