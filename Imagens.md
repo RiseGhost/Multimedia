@@ -188,3 +188,24 @@ blue.save("blue.png")
 	- imagens em níveis de cizento, com 8 bpp;
 	- imagens em cor indexada, com 8 bpp;
 	- imagens "true color", com 24 bpp (+ componente alpha)
+
+Sabendo a __largura__ e a __altura__, em pixéis, de uma imagem e a __profundidade__ de quantificação podemos calcular o __tamanho__ do ficheiro de uma imagem bitmap (não comprimido) com: <p>
+
+![](https://latex.codecogs.com/gif.latex?%5Cdpi%7B300%7D%20%5Cbg_white%20%5Cfn_cm%20%5Chuge%20T%28KB%29%20%3D%5Cfrac%7Blargura%20%28pixel%29%20x%20altura%20%28pixel%29%20x%20porfundidade%20%28bits/pixel%29%7D%7B8%28bits/byte%29%20x%201024%28bytes/kB%29%7D)
+
+__Resolução__ (ppp): número de pontos digitalizados, afixados ou imprimidos por uma unidade de largura.
+
+### Vantangens de imagens Bitmap:
+- São capazes de produzir graduação de nuances e de cores muito finas;
+- São constituídas por pixéis, o que __premite o tratamento ponto a ponto__ e são adaptadas a representação sobre ecrã ou impressão;
+- São diretamente __guardadas na memória__, logo são __representadas muito rapidamente no ecrã__ (muito mais depressa do que as imagens vetoriais que, devem ser reconstituídas).
+
+### Desvantangens de imagens Bitmap:
+- A __qualidade__ destas imagens está diretamente __dependente do material de aquiseção e de reprodução__ (por exemplo a resolução de ecrã, da impressora, do scanner);
+- O facto de serem imagens de pontos __exige uma grande quantidade de espaço em memória__ (grande quantidade de pontos cujas características de cor são definidas individualmente).
+
+### Imagens Bitmap, Entrelaçamento:
+- As imagens bitmap podem permetir uma __visualização progressiva__ através da técnica de entrelaçamento. Mesmo com a redução de tamanho permitida pela indexação de cores uma imagem pode demorar um tempo considerável até poder ser visualizada.
+- A técnica de entrelaçamento consiste em __reordenar as linhas das imagens, organizando-as em vários grupos__.
+- A transmissão de imagens grupo a grupo permite que o utilizador comece a formar um ideia da imagem após apenas algumas linhas terem sido transmitidas.
+- Esta característica pode ser observada durante o __carregamento de imagens transmitidas pela web__ quando o fluxo de dados é baixo.
