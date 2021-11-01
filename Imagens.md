@@ -116,7 +116,7 @@ output_image.save("flip.jpg")
 ![](http://4.bp.blogspot.com/-XSebXPhPo-Q/TV0BeHJUW7I/AAAAAAAAAAU/M5J9Sc7KH-0/s1600/sdabvksdlkf.jpg)
 
 ### Obter os canais de cor de uma imagem:
-O código a baixo abaixo sepera os canais de cor de uma imagem. Está escrito em _python_.
+O código a baixo abaixo sepera os canais de cor de uma imagem. Esta escrito em _python_.
 ```python
 from PIL import Image
 import numpy as np
@@ -143,7 +143,7 @@ blue.save("blue.png")
 ```
 
 <p>O resultado final é o seguinte sem o preto e branco:
-	
+
 ![](https://waltermattos.com/site/wp-content/uploads/2017/08/Poder_Curvas_Photoshop_Canais_RGB_Mistura.jpg)
 
 ### Modelo CMYK:
@@ -153,3 +153,38 @@ blue.save("blue.png")
 	- **Ciano** (verde, azul): opôes-se à passagem do vermelho;
 	- **Magenta**(vermelho, azul): opõe-se à passagem do verde;
 	- **Amarelo**(verde, vermelho): opõe-se à passagem da cor azul.
+	- 
+### Formatos de ficheiros mais comuns:
+	RGB:
+	- jpg
+	- png
+	- gif
+	- psd
+
+<p>
+
+	CMYK:
+	- AI
+	- PDF
+	- EPS
+
+### Modelo HSV:
+
+- __H (Hue)__ -> Representa o tom.
+- __S (Saturation)__ -> saturação da cor. Quanto mais baixo for a saturação, mais cizento é a cor. Quando a saturação é zero a cor é cizento.
+- __V (Values)__ -> Representa a intensidade luminosidade. O brilho é determinado pelo grau de refletividade da superfície física que recebe a luz. Quanto maior for o brilho mais clara é a cor.
+
+![](https://miro.medium.com/max/1400/0*YOMaPWRcXqAdKBbl.)
+
+## Imagens Bitmap:
+### Tamnho e Resolução:
+
+	Profundidade -> número de bits para codificar um pixel.
+
+<p>
+
+	Podemos dividir as imagens bitmap em várias categorias:
+	- imagens em dois níveis (preto e branco), com 1 bpp;
+	- imagens em níveis de cizento, com 8 bpp;
+	- imagens em cor indexada, com 8 bpp;
+	- imagens "true color", com 24 bpp (+ componente alpha)
