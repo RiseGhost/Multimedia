@@ -195,17 +195,92 @@ Sabendo a __largura__ e a __altura__, em pixéis, de uma imagem e a __profundida
 
 __Resolução__ (ppp): número de pontos digitalizados, afixados ou imprimidos por uma unidade de largura.
 
-### Vantangens de imagens Bitmap:
+### Imagens Bitmap - Vantagens:
 - São capazes de produzir graduação de nuances e de cores muito finas;
 - São constituídas por pixéis, o que __premite o tratamento ponto a ponto__ e são adaptadas a representação sobre ecrã ou impressão;
 - São diretamente __guardadas na memória__, logo são __representadas muito rapidamente no ecrã__ (muito mais depressa do que as imagens vetoriais que, devem ser reconstituídas).
 
-### Desvantangens de imagens Bitmap:
+### Imagens Bitmap - Desvantagens:
 - A __qualidade__ destas imagens está diretamente __dependente do material de aquiseção e de reprodução__ (por exemplo a resolução de ecrã, da impressora, do scanner);
 - O facto de serem imagens de pontos __exige uma grande quantidade de espaço em memória__ (grande quantidade de pontos cujas características de cor são definidas individualmente).
 
-### Imagens Bitmap, Entrelaçamento:
+### Imagens Bitmap - Entrelaçamento:
 - As imagens bitmap podem permetir uma __visualização progressiva__ através da técnica de entrelaçamento. Mesmo com a redução de tamanho permitida pela indexação de cores uma imagem pode demorar um tempo considerável até poder ser visualizada.
 - A técnica de entrelaçamento consiste em __reordenar as linhas das imagens, organizando-as em vários grupos__.
 - A transmissão de imagens grupo a grupo permite que o utilizador comece a formar um ideia da imagem após apenas algumas linhas terem sido transmitidas.
 - Esta característica pode ser observada durante o __carregamento de imagens transmitidas pela web__ quando o fluxo de dados é baixo.
+
+![](https://i.stack.imgur.com/BtI3d.gif)
+
+### Imagens Bitmap - Gif:
+- Criada em 1980 pela Compuserve;
+- Utilizada compressão sem perdas LZW;
+- Profundidade de pixel não seperior a 8 bits;
+- Otimizado para comrpessão de imagens contendo poucas cores diferentes e apresentando grandes quantidades de pixéis da mesma cor (logos, esquemas, diagramas a preto e branco, etx.);
+- É adaptado a iamgens com forte constante e a texto mas não à fotografias realista;
+- A variante GIF87a aceita entrelaçamento e a versão 89a jutna ainda a possibilidade de transparência e animação;
+- Permite entrelaçamento;
+
+### Imagens Bitmap - PNG:
+- Formato mais recente que reúneas principais qualidades dos seus predecessores, eliminando a maiorria dos defeitos;
+- Utiliza compressão sem perdas;
+- Permite codificação até 48 bpp;
+- Atinge níveis de comrpessão próximos des JPEG(mas sem perdas);
+- Permite transparência por canal alpha;
+- Este formato é livre (não utiliza qualquer algoritmo de domínio privado);
+
+## Imagens Vetoriais:
+	- A imagem vetorial é constituída por um conjunto de figuras elementares descrita por dados matemáticos.
+	- Descrevem as diferentes figuras com objetos gráficos independentes uns ous outros.
+	- Os objetos podem ser manipulados e transformados independentemente.
+
+![](https://presentationteam.com/wp-content/themes/yootheme/cache/StickerYou_Blog_Vector-vs-Bitmap_600x400-3d19c944.webp)
+
+### Imagens Vetoriais - Vantagens:
+- As __informações__ são __descritas textualmente__ logo eficazmente comprimidas;
+- O __tamanho da memória é independente do tamanho da imagem__;
+- É possível __aplicar__ facilmente e __sem perda de precissão transformações geométricas__ (por exemplo: deslocamentos, translações, alteração de tamanho, rotações, etc...);
+- Os diferentes __objetos__ podem ser __manipulados e transformados independentemente__ e com grande precisão;
+- São __independentes dos periféricos e da resolução__, assim são automáticamente colocadas na escala para ser imprimida de forma precisa sobre o qualuqer periférico de saída.
+
+### Imagens Vetoriais - Desvantagens:
+- O tamanho do ficheiro varia em função da complexidade da imagem;
+- Não podemos usar o formato vetorial para descerver uma imagem muito complexa, por exemplo fotografia;
+- O __tempo de representação__ de uma imagem vetorial é __superior__ em relação a uma imagem bitmap (aumenta com a complexidade da imagem);
+- Qualquer __perda ou corrupção__ no ficheiro leva à __perda de imagem na totalidade__;
+
+### Imagens Vetoriais - Modelos Gráficos:
+	Modelos geométricos: 📐
+
+	Constituem o tipo de modelo gráfico mais comum e também o mais simples de desenvolver;
+	São desenvolvidos à custa de formas geométricas 2D e 3D básicas que se designam por primitivas gráficas;
+	As curvas e as superfícies curvas descrevem-se por intermédio de polinómios parametrizados.
+
+<p>
+
+	Modelos Sólido: 🧊
+	
+	Descrevem os objetos tridimensionais por meio de técnicas específicas:
+	- CSG (Constructive Solid Geometry);
+	- Superfícies de revolução;
+	- Extrusão.
+
+<p>
+
+	Modelos Físico: 🌏
+	
+	Modelo com um grau muito elevado de precisão.
+	Produzem imagens com muito realisto;
+	Incluem descrição das forças, tensão e esforço aplicados aos objetos que constituem uma determinada cena.
+
+<p>
+
+	Modelos Empíricos: 🌤 🌊 🔥 🌳
+
+	Descrevem os fenómenos naturais complexos:
+	- Nuvens;
+	- Ondas do mar;
+	- Fogo;
+	- Plantas
+	Obtêm-se sobretudo por meio da observação da natureza.
+	As técnicas utilizadas para a modelação empírica incluem as fractais e os sistemas de pratículas.
