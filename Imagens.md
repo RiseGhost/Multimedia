@@ -284,3 +284,46 @@ __Resolução__ (ppp): número de pontos digitalizados, afixados ou imprimidos p
 	- Plantas
 	Obtêm-se sobretudo por meio da observação da natureza.
 	As técnicas utilizadas para a modelação empírica incluem as fractais e os sistemas de pratículas.
+
+### Imagens Vetoriais - Operações Gráficas:
+	Edição de Primitivas:
+	- Operações que lidam com a especificação e a modificação dos parâmetros associados às primitivas geométricas utilizadas num determinado modelo gráfico.
+
+<p>
+
+	Operações de Edição Estrutural: 🕋
+	- São operações de criação e modificação dos conjuntos de primitivas que constituem um modelo;
+	- Permitem estabelecer relações espaciais entre as primitivas.
+
+<p>
+
+	Operações de Aplicação de Materiais e Mapeamento: 🗺
+	- Depois da fase de construção da geometria do modelo gráfico, passamos para aplicação de materiais aos objetos contidos na cena modelada.
+
+<p>
+
+	Operações de Iluminição: 💡
+	- Permitem iluminar uma cena constituída por objetos gráficos a partir de várias fontes de luz:
+		- Luz ambiente;
+		- Pontos de luz;
+		- Luzes direcionais;
+		- Spotlihts
+
+<p>
+
+	Operações de Visualização: 👁
+	- Consistem na específicação da projeção pretendida e do volume da visualização.
+
+<p>
+
+	Operações de Sombreamento: 
+	- Permitem aumentar o realismo de um modelo gráfico já que especificam a forma como a luz interage com os objetos do modelo.
+
+## Imagens Bitmap VS Imagens Vetoriais:
+
+Imagens vetoriais								                                 | Imagens Bitmap
+--------------------------------------------------------------- | ----------------------------------------------------------
+Os gráficos são documentos __corrigíveis__.                          | As imagens não são corrigíveis.
+Os formatos gráficos __retêm__ informação estrutural.              | Os formatos das imagens __não reconhecem__ quaiquer informação estrutural.
+O conteúdo semântico __é preservado__ pela representação.  | O conteúdo semântico __não é preservado__ pela representação.
+Os gráficos são descritos em termos de __objetos__.                 | As imagens são descritas em termos de __pixéis__.
