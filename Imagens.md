@@ -216,16 +216,16 @@ __Resolução__ (ppp): número de pontos digitalizados, afixados ou imprimidos p
 - Criada em 1980 pela Compuserve;
 - Utilizada compressão sem perdas LZW;
 - Profundidade de pixel não seperior a 8 bits;
-- Otimizado para comrpessão de imagens contendo poucas cores diferentes e apresentando grandes quantidades de pixéis da mesma cor (logos, esquemas, diagramas a preto e branco, etx.);
-- É adaptado a iamgens com forte constante e a texto mas não à fotografias realista;
-- A variante GIF87a aceita entrelaçamento e a versão 89a jutna ainda a possibilidade de transparência e animação;
+- Otimizado para compressão de imagens contendo poucas cores diferentes e apresentando grandes quantidades de pixéis da mesma cor (logos, esquemas, diagramas a preto e branco, etx.);
+- É adaptado a imagens com forte contraste e a texto, mas não a fotografias realistas;
+- A variante GIF87a aceita entrelaçamento e a versão 89a junta ainda a possibilidade de transparência e animação;
 - Permite entrelaçamento;
 
 ### Imagens Bitmap - PNG:
-- Formato mais recente que reúneas principais qualidades dos seus predecessores, eliminando a maiorria dos defeitos;
+- Formato mais recente que reúne as principais qualidades dos seus predecessores, eliminando a maioria dos defeitos;
 - Utiliza compressão sem perdas;
 - Permite codificação até 48 bpp;
-- Atinge níveis de comrpessão próximos des JPEG(mas sem perdas);
+- Atinge níveis de compressão próximos do JPEG(mas sem perdas);
 - Permite transparência por canal alpha;
 - Este formato é livre (não utiliza qualquer algoritmo de domínio privado);
 
